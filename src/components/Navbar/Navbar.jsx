@@ -12,7 +12,7 @@ function Navbar() {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='about'>About222</NavLinks>
+              <NavLinks to='about'>About</NavLinks>
             </NavItem>
           </NavMenu>
         </NavContainer>
