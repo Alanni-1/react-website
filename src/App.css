@@ -8,3 +8,8 @@
 li {
   list-style: none;
 }
+
+.unuser {
+  /* 禁止拖拽 */
+  -webkit-user-drag: none;
+}
