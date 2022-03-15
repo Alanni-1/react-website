@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Changeselect = styled.select`
   width: 65px;
-  height: 40px;
+  height: ${({height}) => (height ? height : '40px')};
   padding: 5px 10px;
   margin-right: 20px;
   outline: none;

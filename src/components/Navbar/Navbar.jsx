@@ -8,7 +8,8 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
+  MobileLanguage
 } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
@@ -21,6 +22,9 @@ const Navbar = ({toggle}) => {
       <Nav>
         <NavbarContainer>
           <NavLogo to='/'>dolla</NavLogo>
+          <MobileLanguage>
+            <ChangeLanguage height='35px'/>
+          </MobileLanguage>
           <MobileIcon onClick={toggle}>
             <FaBars/>
           </MobileIcon>

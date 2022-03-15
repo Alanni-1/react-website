@@ -8,7 +8,7 @@ import {
   Changeoption
 } from './ChangeLanguageElements'
 
-const ChangeLanguage = () => {
+const ChangeLanguage = ({height}) => {
   const [language, setLanguage] = useState('zh')
 
   const changeLanguage = (e)=>{
@@ -29,7 +29,7 @@ const ChangeLanguage = () => {
 
   return (
     <>
-      <Changeselect value={language} onChange={(e)=>changeLanguage(e)}>
+      <Changeselect value={language} onChange={(e)=>changeLanguage(e)} height={height}>
         <Changeoption value="zh">简</Changeoption>
         <Changeoption value="en">英</Changeoption>
       </Changeselect>
