@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "about":  "首页",
+    "discover": "发现",
+    "services": "服务",
+    "signup": "注册",
+    "signin": "登录"
+  },
+  "banner": {
+    "title": "虚拟银行变得简单",
+    "subtitle": "今天签署一个新帐户,并为您的下一笔付款收到250美元的信贷。",
+    "button": "开始创建"
+  }
+}

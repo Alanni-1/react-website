@@ -12,10 +12,12 @@ import {
   ArrowForward,
   ArrowRight
 } from './HeroSectionElements.js'
+import {useTranslation} from 'react-i18next'
 
 const HeroSection = () => {
   const video = useRef(null)
   const [hover, sethover] = useState(false)
+  const {t} = useTranslation()
 
   const onHover = () => {
     sethover(!hover)
@@ -31,13 +33,13 @@ const HeroSection = () => {
         <VideoBg className='unuser' ref={video} muted loop src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>{t('banner.title')}</HeroH1>
         <HeroP>
-          Sign uo for a new accoun today and receive $250 in credit towards your next payment.
+          {t("banner.subtitle")}
         </HeroP>
         <HeroBtnWrapper>
           <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary dark>
-            Get started { hover ? <ArrowForward/> : <ArrowRight/> }
+            {t('banner.button')} { hover ? <ArrowForward/> : <ArrowRight/> }
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

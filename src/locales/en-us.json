@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "about":  "About",
+    "discover": "Discover",
+    "services": "Services",
+    "signup": "Sign Up",
+    "signin": "Sign In"
+  },
+  "banner": {
+    "title": "Virtual Banking Made Easy",
+    "subtitle": "Sign uo for a new accoun today and receive $250 in credit towards your next payment.",
+    "button": "Get started"
+  }
+}

@@ -11,8 +11,11 @@ import {
   NavBtnLink
 } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
-
+import { useTranslation } from 'react-i18next'
+import ChangeLanguage from '../ChangeLanguage/ChangeLanguage'
 const Navbar = ({toggle}) => {
+  const {t} = useTranslation()
+
   return (
     <>
       <Nav>
@@ -23,20 +26,21 @@ const Navbar = ({toggle}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='about'>About</NavLinks>
+              <NavLinks to='about'>{t('nav.about')}</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='discover'>Discover</NavLinks>
+              <NavLinks to='discover'>{t('nav.discover')}</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='services'>Services</NavLinks>
+              <NavLinks to='services'>{t('nav.services')}</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='signup'>Sign Up</NavLinks>
+              <NavLinks to='signup'>{t('nav.signup')}</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+            <ChangeLanguage/>
+            <NavBtnLink to='/signin'>{t('nav.signin')}</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
