@@ -21,9 +21,16 @@ const InfoSection = ({
   id,
   imgStart,
   lightText,
+  topLine,
+  headline,
+  description,
+  buttonLabel,
   darkText,
   img,
-  alt
+  alt,
+  primary,
+  dark,
+  dark2
 }) => {
   const {t} = useTranslation()
   return (
@@ -33,12 +40,12 @@ const InfoSection = ({
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>{t('info.title')}</TopLine>
-                <Heading lightText={lightText}>{t('info.subtitle')}</Heading>
-                <Subtitle darkText={darkText}>{t('info.p')}</Subtitle>
+                <TopLine>{t('info.'+ topLine +'.title')}</TopLine>
+                <Heading lightText={lightText}>{t('info.'+ headline +'.subtitle')}</Heading>
+                <Subtitle darkText={darkText}>{t('info.'+ description +'.p')}</Subtitle>
                 <BtnWrap>
-                  <Button to="home" primary='true' dark='true' smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-                    {t('info.button')}
+                  <Button to="home" primary={primary ? 1 : 0} dark={dark ? 1 : 0} dark2={dark2 ? 1 : 0} smooth={true} duration={500} spy={true} exact="true" offset={-80}>
+                    {t('info.'+ buttonLabel +'.button')}
                   </Button>
                 </BtnWrap>
               </TextWrapper>
