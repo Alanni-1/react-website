@@ -30,5 +30,20 @@
       "p": "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
       "button": "Start Now"
     }
+  },
+  "services": {
+    "title": "Our Services",
+    "one": {
+      "title": "Reduce",
+      "subtitle": "We help reduce your fess and increase your overall revenue."
+    },
+    "two": {
+      "title": "Virtual Offices",
+      "subtitle": "You can access our platform online anywhere in the world."
+    },
+    "three": {
+      "title": "Premium Benefits",
+      "subtitle": "Unlock our special membership card that returns 5% cash back."
+    }
   }
 }

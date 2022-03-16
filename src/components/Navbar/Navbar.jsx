@@ -23,7 +23,7 @@ const Navbar = ({toggle}) => {
         <NavbarContainer>
           <NavLogo to='/'>dolla</NavLogo>
           <MobileLanguage>
-            <ChangeLanguage height='35px'/>
+            <ChangeLanguage/>
           </MobileLanguage>
           <MobileIcon onClick={toggle}>
             <FaBars/>

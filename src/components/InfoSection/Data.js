@@ -40,7 +40,7 @@ export const homeObjTwo = {
 }
 
 export const homeObjThree = {
-  id: 'services',
+  id: 'signup',
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -50,57 +50,6 @@ export const homeObjThree = {
   buttonLabel: 'three',
   imgStart: false,
   img: img3,
-  alt: 'Paper',
-  dark: false,
-  primary: false,
-  darkText: true
-}
-
-export const homeObjFour = {
-  id: 'Services',
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: 'three',
-  headline: 'three',
-  description: 'three',
-  buttonLabel: 'three',
-  imgStart: false,
-  img: img4,
-  alt: 'Paper',
-  dark: false,
-  primary: false,
-  darkText: true
-}
-
-export const homeObjFiver = {
-  id: 'Services',
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: 'three',
-  headline: 'three',
-  description: 'three',
-  buttonLabel: 'three',
-  imgStart: false,
-  img: img5,
-  alt: 'Paper',
-  dark: false,
-  primary: false,
-  darkText: true
-}
-
-export const homeObjSix = {
-  id: 'Services',
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: 'three',
-  headline: 'three',
-  description: 'three',
-  buttonLabel: 'three',
-  imgStart: false,
-  img: img6,
   alt: 'Paper',
   dark: false,
   primary: false,

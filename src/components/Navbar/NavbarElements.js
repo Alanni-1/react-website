@@ -49,7 +49,7 @@ export const MobileLanguage = styled.div`
     position: absolute;
     top: 0;
     right: 60px;
-    transform: translateY(55%);
+    transform: translateY(75%);
   }
 `
 
