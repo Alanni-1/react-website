@@ -1,12 +1,13 @@
+// Fragment 等同于空标签
+import React, {Fragment} from 'react';
+import BaseRouter from './route'
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom'
-import Home from './pages';
 
 function App() {
   return (
-    <Router>
-      <Home/>
-    </Router>
+    <Fragment>
+      <BaseRouter/>
+    </Fragment>
   );
 }
 

@@ -14,6 +14,7 @@ import {
 import { FaBars } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
 import ChangeLanguage from '../ChangeLanguage/ChangeLanguage'
+import { Link } from 'react-router-dom'
 const Navbar = ({toggle}) => {
   const {t} = useTranslation()
 
