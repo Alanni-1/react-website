@@ -43,7 +43,39 @@
     },
     "three": {
       "title": "额外优惠",
-      "subtitle": "解锁我们的特殊会员卡，退还5%现金。"
+      "subtitle": "解锁我们的特殊会员卡退还5%现金。"
     }
+  },
+  "footer": {
+    "about": {
+      "title": "关于我们",
+      "subtitle1": "如何运作",
+      "subtitle2": "客户评价",
+      "subtitle3": "职业生涯",
+      "subtitle4": "投资人",
+      "subtitle5": "服务协议"
+    },
+    "contact": {
+      "title": "联系我们",
+      "subtitle1": "联系方式",
+      "subtitle2": "支持",
+      "subtitle3": "目的地",
+      "subtitle4": "赞助"
+    },
+    "videos": {
+      "title": "视频",
+      "subtitle1": "提交视频",
+      "subtitle2": "大使",
+      "subtitle3": "代理商",
+      "subtitle4": "参与者"
+    },
+    "social": {
+      "title": "社交媒体",
+      "subtitle1": "Instagram",
+      "subtitle2": "Facebook",
+      "subtitle3": "Youtube",
+      "subtitle4": "Twitter"
+    },
+    "rights": "版权所有"
   }
 }

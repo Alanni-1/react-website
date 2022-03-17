@@ -1,4 +1,5 @@
 import React from 'react'
+import {useTranslation} from 'react-i18next'
 import {animateScroll as scroll} from 'react-scroll'
 import {
   FaFacebook,
@@ -24,6 +25,8 @@ import {
 } from './FooterElements'
 
 const Footer = () => {
+  const {t} = useTranslation()
+
   const toggleHome = () => {
     scroll.scrollToTop()
   }
@@ -34,35 +37,35 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Abuot us</FooterLinkTitle>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">Testimonials</FooterLink>
-              <FooterLink to="/">Careers</FooterLink>
-              <FooterLink to="/">Investors</FooterLink>
-              <FooterLink to="/">Terms of Service</FooterLink>
+              <FooterLinkTitle>{t('footer.about.title')}</FooterLinkTitle>
+              <FooterLink to="/">{t('footer.about.subtitle1')}</FooterLink>
+              <FooterLink to="/">{t('footer.about.subtitle2')}</FooterLink>
+              <FooterLink to="/">{t('footer.about.subtitle3')}</FooterLink>
+              <FooterLink to="/">{t('footer.about.subtitle4')}</FooterLink>
+              <FooterLink to="/">{t('footer.about.subtitle5')}</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to="/">Contact</FooterLink>
-              <FooterLink to="/">Support</FooterLink>
-              <FooterLink to="/">Destinations</FooterLink>
-              <FooterLink to="/">Sponsorships</FooterLink>
+              <FooterLinkTitle>{t('footer.contact.title')}</FooterLinkTitle>
+              <FooterLink to="/">{t('footer.contact.subtitle1')}</FooterLink>
+              <FooterLink to="/">{t('footer.contact.subtitle2')}</FooterLink>
+              <FooterLink to="/">{t('footer.contact.subtitle3')}</FooterLink>
+              <FooterLink to="/">{t('footer.contact.subtitle4')}</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to="/">Submit Video</FooterLink>
-              <FooterLink to="/">Ambassadors</FooterLink>
-              <FooterLink to="/">Agency</FooterLink>
-              <FooterLink to="/">Influencer</FooterLink>
+              <FooterLinkTitle>{t('footer.videos.title')}</FooterLinkTitle>
+              <FooterLink to="/">{t('footer.videos.subtitle1')}</FooterLink>
+              <FooterLink to="/">{t('footer.videos.subtitle2')}</FooterLink>
+              <FooterLink to="/">{t('footer.videos.subtitle3')}</FooterLink>
+              <FooterLink to="/">{t('footer.videos.subtitle4')}</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to="/">Instagram</FooterLink>
-              <FooterLink to="/">Facebook</FooterLink>
-              <FooterLink to="/">Youtube</FooterLink>
-              <FooterLink to="/">Twitter</FooterLink>
+              <FooterLinkTitle>{t('footer.social.title')}</FooterLinkTitle>
+              <FooterLink to="/">{t('footer.social.subtitle1')}</FooterLink>
+              <FooterLink to="/">{t('footer.social.subtitle2')}</FooterLink>
+              <FooterLink to="/">{t('footer.social.subtitle3')}</FooterLink>
+              <FooterLink to="/">{t('footer.social.subtitle4')}</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -71,7 +74,7 @@ const Footer = () => {
             <SocialLogo to='/' onClick={toggleHome}>
               dolla
             </SocialLogo>
-            <WebsiteRights>dolla &subat; {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+            <WebsiteRights>dolla &copy; {new Date().getFullYear()} {t('footer.rights')}</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='/' target="_blank" aria-label="Facebook">
                 <FaFacebook/>

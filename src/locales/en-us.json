@@ -45,5 +45,37 @@
       "title": "Premium Benefits",
       "subtitle": "Unlock our special membership card that returns 5% cash back."
     }
+  },
+  "footer": {
+    "about": {
+      "title": "Abuot Us",
+      "subtitle1": "How it works",
+      "subtitle2": "Testimonials",
+      "subtitle3": "Careers",
+      "subtitle4": "Investors",
+      "subtitle5": "Terms of Service"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle1": "Contact",
+      "subtitle2": "Support",
+      "subtitle3": "Destinations",
+      "subtitle4": "Sponsorships"
+    },
+    "videos": {
+      "title": "Videos",
+      "subtitle1": "Submit Video",
+      "subtitle2": "Ambassadors",
+      "subtitle3": "Agency",
+      "subtitle4": "Influencer"
+    },
+    "social": {
+      "title": "Social Media",
+      "subtitle1": "Instagram",
+      "subtitle2": "Facebook",
+      "subtitle3": "Youtube",
+      "subtitle4": "Twitter"
+    },
+    "rights": "All rights reserved"
   }
 }
