@@ -14,7 +14,6 @@ import {
 import { FaBars } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
 import ChangeLanguage from '../ChangeLanguage/ChangeLanguage'
-import { Link } from 'react-router-dom'
 const Navbar = ({toggle}) => {
   const {t} = useTranslation()
 
@@ -31,16 +30,16 @@ const Navbar = ({toggle}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='about'>{t('nav.about')}</NavLinks>
+              <NavLinks to='about' duration={500} smooth>{t('nav.about')}</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='discover'>{t('nav.discover')}</NavLinks>
+              <NavLinks to='discover' duration={500} smooth>{t('nav.discover')}</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='services'>{t('nav.services')}</NavLinks>
+              <NavLinks to='services' duration={500} smooth>{t('nav.services')}</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='signup'>{t('nav.signup')}</NavLinks>
+              <NavLinks to='signup' duration={500} smooth>{t('nav.signup')}</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
