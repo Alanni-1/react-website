@@ -21,10 +21,10 @@ function Sidebar({isOpen, toggle}) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink onClick={toggle} to='about'>{t('nav.about')}</SidebarLink>
-          <SidebarLink onClick={toggle} to='discover'>{t('nav.discover')}</SidebarLink>
-          <SidebarLink onClick={toggle} to='services'>{t('nav.services')}</SidebarLink>
-          <SidebarLink onClick={toggle} to='signup'>{t('nav.signup')}</SidebarLink>
+          <SidebarLink onClick={toggle} smooth to='about'>{t('nav.about')}</SidebarLink>
+          <SidebarLink onClick={toggle} smooth to='discover'>{t('nav.discover')}</SidebarLink>
+          <SidebarLink onClick={toggle} smooth to='services'>{t('nav.services')}</SidebarLink>
+          <SidebarLink onClick={toggle} smooth to='signup'>{t('nav.signup')}</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to='signin'>{t('nav.signin')}</SidebarRoute>
