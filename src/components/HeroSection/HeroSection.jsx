@@ -38,7 +38,7 @@ const HeroSection = () => {
           {t("banner.subtitle")}
         </HeroP>
         <HeroBtnWrapper>
-          <Button to="signup"  onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+          <Button to="signup"  onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth>
             {t('banner.button')} { hover ? <ArrowForward/> : <ArrowRight/> }
           </Button>
         </HeroBtnWrapper>
